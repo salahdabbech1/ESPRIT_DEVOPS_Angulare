@@ -2,9 +2,7 @@ version: "3.3"
 services :
     angular-app: 
         image: salahdabbech/angular:latest 
-        container_name: front_c 
-        
-       
+        container_name: front_c              
         ports: 
           - "4200:4200" 
         volumes: 
