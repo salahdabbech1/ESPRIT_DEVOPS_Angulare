@@ -1,8 +1,7 @@
 # Build Stage
-FROM node:latest as build
+FROM node:latest
 WORKDIR /app
-COPY package*.json /app/
-RUN npm install 
+COPY package*.json /app/ 
 COPY ./ /app/
 RUN node_modules/.bin/ng build --output-path=dist --prod=true
 
